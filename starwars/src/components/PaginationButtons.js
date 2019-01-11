@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 
@@ -18,7 +17,7 @@ const PaginationButtons = props => {
     <div>
       <Button
         variant="outlined"
-        disabled={!props.previous ? "true" : null}
+        disabled={!props.previous ? true : null}
         className={classes.button}
         color="secondary"
         onClick={props.previousPage}
@@ -26,6 +25,7 @@ const PaginationButtons = props => {
         PREVIOUS
       </Button>
       <Button
+        disabled={!props.next ? true : null}
         onClick={props.nextPage}
         variant="outlined"
         color="secondary"
