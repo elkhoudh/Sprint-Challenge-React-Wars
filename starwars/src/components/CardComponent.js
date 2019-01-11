@@ -119,7 +119,7 @@ class CardComponent extends React.Component {
                 Height:
               </Typography>
               <Typography variant="title" gutterBottom>
-                {character.height} LBS
+                {character.height}
               </Typography>
             </div>
             <div className={classes.statsContainer}>
